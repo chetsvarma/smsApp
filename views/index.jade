@@ -1,0 +1,20 @@
+extends layout
+
+block content
+  .FormBanner
+      h1 Homesfy SMS Portal
+      form(name='add_list', action='/publish', method='post', onsubmit='return required()')
+        span.label Select Project
+        select(name='projectName')
+          option(value='kalpataru') Kalpataru
+          option(value='lodha amara') Lodha Amara
+        span.label Select SMS Templates
+        select(name='template')
+          option(value='Thanks for visiting #projectname.Hope you got all information.Give missed call if not happy or need more information: 08030636065')
+            | Thanks for visiting #projectname. Hope you got all information.Give missed call if not happy or need more information: 08030636065
+          option(value='Website & Chat Lead Alert: Enquiry For Project Name: #projectname') Website & Chat Lead Alert: Enquiry For Project Name: #projectname
+        .input
+          span.label Insert Comma Separated Numbers
+          textarea(name='list', cols='60', rows='5')
+        .actions
+          input(type='submit', value='Publish')

@@ -1,0 +1,51 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.label{
+	display: block;
+}
+
+.FormBanner {
+    width: 100%;
+    float: none;
+    display: table;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.FormBanner form {
+    width: 100%;
+    float: left;
+    margin: 0;
+}
+
+.FormBanner form .label {
+    width: 100%;
+    float: left;
+    font-size: 19px;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.FormBanner form select, .FormBanner form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+textarea {}
+
+.FormBanner form input[type="submit"] {
+    width: 150px;
+    padding: 10px;
+    border: 0;
+    background-color: #f00;
+    color: #fff;
+}
